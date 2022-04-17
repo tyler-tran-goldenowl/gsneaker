@@ -6,8 +6,12 @@ $gray: #777777;
 $yellow: #F6C90E;
 $yellow-hover: #f8d43f;
 
-fw-700 {
+.fw-700 {
     font-weight: 700;
+}
+
+.display-none {
+    display: none;
 }
 
 * {
@@ -65,7 +69,7 @@ body {
         height: 28px;
         margin: 16px 0;
         font-size: 24px;
-        @extend fw-700;
+        @extend .fw-700;
     }
 
     &-body {
@@ -105,7 +109,7 @@ body {
     &-name {
         margin: 26px 0 20px;
         font-size: 20px;
-        @extend fw-700;
+        @extend .fw-700;
     }
 
     &-intro {
@@ -117,7 +121,7 @@ body {
     
     &-price {
         font-size: 18px;
-        @extend fw-700;
+        @extend .fw-700;
     }
 
     &-add-btn {
@@ -144,4 +148,68 @@ body {
     }
 }
 
+.cart-empty {
+    padding: 14px 0;
+    font-size: 14px;
+}
 
+.cart-item {
+    padding: 20px 0; 
+
+    .item-img {
+        width: 90px;
+        height: 90px;
+        background-color: #e1e7ed;
+        border-radius: 50%;
+        position: relative;
+
+        img {
+            width: 144%;
+            transform: rotate(-26deg);
+            position: absolute;
+            top: -36px;
+            left: -20px;
+        }
+    }
+
+    .item-status {
+        width: 180px;
+
+        .item-name {
+            font-size: 14px;
+            margin-bottom: 10px;
+            @extend .fw-700;
+        }
+
+        .item-price {
+            font-size: 20px;
+            margin-bottom: 16px;
+            @extend .fw-700;
+        }
+    }
+}
+
+.item-qtt {
+    height:28px;
+    text-align: center;
+
+    &-dec, &-inc {
+        background-color: #ddd;
+        width: 28px;
+        border-radius: 50%;
+
+        img {
+            text-align: center;
+            width: 40%;
+        }
+
+        &:hover {
+        }
+    }
+
+    &-num {
+        width: 20px;
+        margin: 0 8px;
+        font-size: 14px;
+    }
+}

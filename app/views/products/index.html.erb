@@ -25,8 +25,8 @@
                         <div class="product-intro">The iconic Nike Air Zoom Pegasus 36 offers more cooling and mesh that targets breathability across high-heat areas. A slimmer heel collar and tongue reduce bulk, while exposed cables give you a snug fit at higher speeds.</div>
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$108.97</div>
-                            <div class="product-add-btn checked">
-                                <%= image_tag "check.png" %>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,30 @@
             </div>
             <div class="holder-body">
                 <div class="cart-items">
-
+                    <div class="cart-empty">Your cart is empty.</div>
+                    <div class="cart-item d-flex justify-content-between">
+                        <div class="item-img">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png" %>
+                        </div>
+                        <div class="item-status">
+                            <div class="item-name">Nike Air Zoom Pegasus 36</div>
+                            <div class="item-price">$108.97</div>
+                            <div class="item bot d-flex">
+                                <div class="item-qtt d-flex">
+                                    <div class="item-qtt-dec">
+                                        <%= image_tag "minus.png" %>
+                                    </div>
+                                    <div class="item-qtt-num align-self-center">1</div>
+                                    <div class="item-qtt-inc">
+                                        <%= image_tag "plus.png" %>
+                                    </div>
+                                </div>
+                                <div class="item remove-btn">
+                                    <%= image_tag "trash.png" %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
