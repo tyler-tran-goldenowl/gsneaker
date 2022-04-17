@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,700&display=swap');
+
+$white: #FFFFFF;
+$black: #303841;
+$gray: #777777;
+$yellow: #F6C90E;
+$yellow-hover: #f8d43f;
+
+fw-700 {
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: $black;
+    position:relative;
+    overflow: hidden;
+    
+    .main {
+        position: relative;
+        height: 100vh;
+        width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: auto;
+    }
+
+    &::before {
+        content: '';
+        background-color: $yellow;
+        position: fixed;
+        height: 100000px;
+        width: 100000px;
+        border-radius: 5%;
+        top: -280%;
+        left: -70%;
+        transform: rotate(-3deg);
+    }
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 600px;
+    padding: 0 28px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: $white;
+
+    &-top {
+        height: 26px;
+        margin-top: 12px;
+        img {
+            width: 50px;
+        }
+    }
+
+    &-title {
+        height: 28px;
+        margin: 16px 0;
+        font-size: 24px;
+        @extend fw-700;
+    }
+
+    &-body {
+        flex-grow: 1;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+}
+
+.product {
+    padding: 40px 0;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    @each $item, $bg-color in (1: #e1e7ed, 2: #4D317F, 3: #E8D026, 4: #FD584A, 5: #D4D7D6, 6: #F2F5F4, 7: #22AFDC, 8: #B50320, 9: #3569A1, 10: #54D4C9) {
+        &#product-#{$item} {
+            .product-image {
+                background-color: $bg-color;
+            }    
+        }
+    }
+
+    &-image {
+        height: 380px;
+        border-radius: 30px;
+        img {
+            width: 100%;
+            transform: rotate(-22deg);
+            position: relative;
+            right: 20px;
+        }
+    }
+
+    &-name {
+        margin: 26px 0 20px;
+        font-size: 20px;
+        @extend fw-700;
+    }
+
+    &-intro {
+        margin-bottom: 20px;
+        font-size: 13px;
+        color: $gray;
+        line-height: 1.8;
+    }
+    
+    &-price {
+        font-size: 18px;
+        @extend fw-700;
+    }
+
+    &-add-btn {
+        width: auto;
+        background-color: $yellow;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: $yellow-hover;
+            box-shadow: -2px 2px 10px rgba($color: $gray, $alpha: 0.2);
+            cursor: pointer;
+        }
+    }
+
+    .checked {
+        pointer-events: none;
+        padding: 12px 14px;
+
+        img {
+            width: 20px;
+        }
+    }
+}
+
+

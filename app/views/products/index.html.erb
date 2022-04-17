@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Sneaker</title>
+    <%# <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> %>
+</head>
+<body>
+    <div class="main d-flex justify-content-between align-items-center">
+        <div class="holder shadow">
+            <div class="holder-top">
+                <%= image_tag "nike.png" %>
+            </div>
+            <div class="holder-title">Our Products</div>
+            <div class="holder-body">
+                <div class="products">
+                    <div class="product" id="product-1">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Air Zoom Pegasus 36</div>
+                        <div class="product-intro">The iconic Nike Air Zoom Pegasus 36 offers more cooling and mesh that targets breathability across high-heat areas. A slimmer heel collar and tongue reduce bulk, while exposed cables give you a snug fit at higher speeds.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$108.97</div>
+                            <div class="product-add-btn checked">
+                                <%= image_tag "check.png" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-2">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-shield-mens-running-shoe-24FBGb__1_-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Air Zoom Pegasus 36 Shield</div>
+                        <div class="product-intro">The Nike Air Zoom Pegasus 36 Shield gets updated to conquer wet routes. A water-repellent upper combines with an outsole that helps create grip on wet surfaces, letting you run in confidence despite the weather.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$89.97</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-3">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/cruzrone-unisex-shoe-T2rRwS-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike CruzrOne</div>
+                        <div class="product-intro">Designed for steady, easy-paced movement, the Nike CruzrOne keeps you going. Its rocker-shaped sole and plush, lightweight cushioning let you move naturally and comfortably. The padded collar is lined with soft wool, adding luxury to every step, while mesh details let your foot breathe. There’s no finish line—there’s only you, one step after the next.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$100.97</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-4">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/epic-react-flyknit-2-mens-running-shoe-2S0Cn1-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Epic React Flyknit 2</div>
+                        <div class="product-intro">The Nike Epic React Flyknit 2 takes a step up from its predecessor with smooth, lightweight performance and a bold look. An updated Flyknit upper conforms to your foot with a minimal, supportive design. Underfoot, durable Nike React technology defies the odds by being both soft and responsive, for comfort that lasts as long as you can run.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$89.97</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-5">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/odyssey-react-flyknit-2-mens-running-shoe-T3VG7N-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Odyssey React Flyknit 2</div>
+                        <div class="product-intro">The Nike Odyssey React Flyknit 2 provides a strategic combination of lightweight Flyknit construction and synthetic material for support. Underfoot, Nike React cushioning delivers a soft, springy ride for a route that begs to be crushed.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$71.97</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-6">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/react-infinity-run-flyknit-mens-running-shoe-RQ484B__2_-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike React Infinity Run Flyknit</div>
+                        <div class="product-intro">A pioneer in the running shoe frontier honors the original pioneer of running culture with the Nike React Infinity Run Flyknit. Blue Ribbon Track Club-inspired details pay homage to the haven that was created before running was even popular. This running shoe is designed to help reduce injury and keep you on the run. More foam and improved upper details provide a secure and cushioned feel.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$160.00</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-7">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/react-miler-mens-running-shoe-DgF6nr-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike React Miler</div>
+                        <div class="product-intro">The Nike React Miler gives you trusted stability for miles with athlete-informed performance. Made for dependability on your long runs, its intuitive design offers a locked-in fit and a durable feel.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$130.00</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-8">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/renew-ride-mens-running-shoe-JkhdfR-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Renew Ride</div>
+                        <div class="product-intro">The Nike Renew Ride helps keep the committed runner moving with plush cushioning. Firm support at the outsole helps you maintain stability no matter the distance.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$60.97</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-9">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/vaporfly-4-flyknit-running-shoe-v7G3FB-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Vaporfly 4% Flyknit</div>
+                        <div class="product-intro">Built to meet the exacting needs of world-class marathoners, Nike Vaporfly 4% Flyknit is designed for record-breaking speed. The Flyknit upper delivers breathable support, while the responsive foam and full-length plate provide incredible energy return for all 26.2.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$187.97</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" id="product-10">
+                        <div class="product-image">
+                            <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/zoom-fly-3-premium-mens-running-shoe-XhzpPH-removebg-preview.png" %>
+                        </div>
+                        <div class="product-name">Nike Vaporfly 4% Flyknit</div>
+                        <div class="product-intro">Inspired by the Vaporfly, the Nike Zoom Fly 3 Premium gives distance runners race-day comfort and durability. The power of a carbon fiber plate keeps you in the running mile after mile.</div>
+                        <div class="product-bot d-flex justify-content-between align-items-center">
+                            <div class="product-price">$160.00</div>
+                            <div class="product-add-btn">ADD TO CART
+                                <%= image_tag "check.png", class:"d-none" %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="holder shadow">
+            <div class="holder-top">
+                <%= image_tag "nike.png" %>
+            </div>
+            <div class="holder-title">
+                Your cart
+                <span class="cart-price float-end">$0.00</span>
+            </div>
+            <div class="holder-body">
+                <div class="cart-items">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
