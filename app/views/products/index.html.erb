@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Sneaker</title>
-    <%# <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="main d-flex justify-content-between align-items-center">
@@ -26,7 +26,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$108.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$89.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$100.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$89.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$71.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$160.00</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$130.00</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$60.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$187.97</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                         <div class="product-bot d-flex justify-content-between align-items-center">
                             <div class="product-price">$160.00</div>
                             <div class="product-add-btn">ADD TO CART
-                                <%= image_tag "check.png", class:"d-none" %>
+                                <%= image_tag "check.png" %>
                             </div>
                         </div>
                     </div>
@@ -161,14 +161,15 @@
             <div class="holder-body">
                 <div class="cart-items">
                     <div class="cart-empty">Your cart is empty.</div>
-                    <div class="cart-item d-flex justify-content-between">
+                    
+                    <div class="cart-item d-flex justify-content-between d-none" id="item-product-0">
                         <div class="item-img">
                             <%= image_tag "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png" %>
                         </div>
                         <div class="item-status">
                             <div class="item-name">Nike Air Zoom Pegasus 36</div>
                             <div class="item-price">$108.97</div>
-                            <div class="item bot d-flex">
+                            <div class="item-bot d-flex justify-content-between">
                                 <div class="item-qtt d-flex">
                                     <div class="item-qtt-dec">
                                         <%= image_tag "minus.png" %>
@@ -178,15 +179,22 @@
                                         <%= image_tag "plus.png" %>
                                     </div>
                                 </div>
-                                <div class="item remove-btn">
+                                <div class="item-remove-btn text-center">
                                     <%= image_tag "trash.png" %>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
+    </div>
+    <div class="img-holder">
+        <%= image_tag "check.png", id:"check-png" %>
+        <%= image_tag "plus.png", id: "plus-png" %>
+        <%= image_tag "minus.png", id: "minus-png" %>
+        <%= image_tag "trash.png", id: "trash-png" %>
     </div>
 </body>
 </html>
